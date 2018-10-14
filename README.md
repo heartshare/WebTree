@@ -38,3 +38,7 @@ package.json
 js, ajax, jquery
 javaScript是用于Web客户端开发的脚本语言，Ajax是基于JS语言，主要组合JS、CSS、XML三种技术的新技术，是用于创建交互式网页应用的网页开发技术。jQuery是JS的框架，基于JS语言，集合Ajax技术开发出来的JS库，封装JS和Ajax的功能，提供函数接口，大大简化了Ajax，JS的操作。 
 </pre>
+
+Angularjs
+
+![](https://i.imgur.com/G1dQZ9b.png)

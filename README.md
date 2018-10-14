@@ -43,6 +43,15 @@ Angularjs
 
 ![](https://i.imgur.com/G1dQZ9b.png)
 
+Ajax/Jsonp
+<pre>
+  Ajax
+</pre>
+
+<pre>
+  Jsonp
+</pre>
+
 cookie/session
 
 ![](https://i.imgur.com/o0rF3He.png)

@@ -55,3 +55,8 @@ Ajax/Jsonp
 cookie/session
 
 ![](https://i.imgur.com/o0rF3He.png)
+
+http长连接/短连接
+
+<pre>
+</pre>

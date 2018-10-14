@@ -42,3 +42,7 @@ javaScript是用于Web客户端开发的脚本语言，Ajax是基于JS语言，�
 Angularjs
 
 ![](https://i.imgur.com/G1dQZ9b.png)
+
+cookie/session
+
+![](https://i.imgur.com/o0rF3He.png)

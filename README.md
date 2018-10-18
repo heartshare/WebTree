@@ -89,4 +89,17 @@ Socket通信示例
 </pre>
 
 <pre>
+深入理解Session与Cookie
+    Session与Cookie的作用都是为了保持访问用户与后端服务器的交互状态。他们有各自的优点，也有各自的缺点，然而具有讽刺意味的是他们的优点
+	和它们使用的场景又是矛盾的。例如，使用Cookie传递信息时，随着Cookie个数的增多和访问量的增加，它占用的网络带宽是非常巨大的，
+	所以大访问量时希望使用Session，但是Session的致命弱点就是不容在多台服务器间共享，这也限制了Session的使用。
+
+    Session:
+         同一个客户端每次与服务端交互时，不需要每次都传回所有的cookie值，而是只要传回一个ID，这个ID是客户端第一次访问服务器时生成的，而且每个客户端是唯一的。这个ID通常是一个名为JSESSIONID的一个cookie，由tomcat分配
+    Cookie数据由服务器生成发送给客户端，数据保存在客户端，每次请求由客户端发送给服务器，很   多浏览器插件可解析cookie，不安全
+    Session:Session数据保存在服务器端，只是通过Cookie传递一个SessionID而已，所以Session更适合存储用户隐私和重要的数据。
 </pre>
+
+分布式session框架
+
+![](https://i.imgur.com/yCOQn4x.jpg)

@@ -103,3 +103,8 @@ Socket通信示例
 分布式session框架
 
 ![](https://i.imgur.com/yCOQn4x.jpg)
+
+<pre>
+添加filter拦截用户请求，在filter中实现Sesssion和Cookie的管理
+对Cookie的压缩
+</pre>mk

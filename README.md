@@ -63,12 +63,30 @@ CDN
 浏览器缓存机制：
     Ctrl+F5 组合键刷新一个页面时，在HTTP的请求头中会增加一些请求头Pragma:no-cache 和 Cache-Controle:no-cache
 
+CDN架构
+
+![](https://i.imgur.com/FuyHoKZ.jpg)
+
 DNS域名解析
 
 ![](https://i.imgur.com/6Jl2wfv.jpg)
 DNS域名解析：
      当用户在浏览器中输入域名并按下回车键后
      第一步：浏览器会检查缓存中有没有这个域名对应的 解析过的IP地址，如果缓存中有，这个解析过程就将结束。域名缓存的时间是有限制的
-     第二步：如果用户的浏览器中没有，浏览器会查找 操作系统缓存中是否有这个域名对应的DNS解析结果（本地DNS解析）	
+     第二步：如果用户的浏览器中没有，浏览器会查找 操作系统缓存中是否有这个域名对应的DNS解析结果（本地DNS解析）
+
+![](https://i.imgur.com/dzfWvUJ.jpg)
+	
+Socket通信示例
+
+![](https://i.imgur.com/5kNeJ7I.jpg)
+
+<pre>
+网络IO的优化
+    1）减少网络交互的次数
+	2）减少网络传输数据量的大小
+	3）编码是需要耗时的，尽量减少编码
+</pre>
+
 <pre>
 </pre>

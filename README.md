@@ -56,7 +56,19 @@ cookie/session
 
 ![](https://i.imgur.com/o0rF3He.png)
 
-http长连接/短连接
+CDN
 
+![](https://i.imgur.com/BjJ0qjU.jpg)
+
+浏览器缓存机制：
+    Ctrl+F5 组合键刷新一个页面时，在HTTP的请求头中会增加一些请求头Pragma:no-cache 和 Cache-Controle:no-cache
+
+DNS域名解析
+
+![](https://i.imgur.com/6Jl2wfv.jpg)
+DNS域名解析：
+     当用户在浏览器中输入域名并按下回车键后
+     第一步：浏览器会检查缓存中有没有这个域名对应的 解析过的IP地址，如果缓存中有，这个解析过程就将结束。域名缓存的时间是有限制的
+     第二步：如果用户的浏览器中没有，浏览器会查找 操作系统缓存中是否有这个域名对应的DNS解析结果（本地DNS解析）	
 <pre>
 </pre>

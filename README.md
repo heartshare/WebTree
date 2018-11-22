@@ -105,6 +105,54 @@ Socket通信示例
 ![](https://i.imgur.com/yCOQn4x.jpg)
 
 <pre>
-添加filter拦截用户请求，在filter中实现Sesssion和Cookie的管理
-对Cookie的压缩
-</pre>mk
+Cookie
+       Cookie是存储在用户本地终端上的数据，同时它是与具体的web页面或者站点相关的
+    额，cookie数据会自动为web浏览器和服务器之间传输，也就是说HTTP请求发送时，会把保存在该
+    请求域名下的所有cookie值发送给web服务器，因此服务器端脚本是可以读，写，存储客户端的
+    cookie的操作。
+
+    cookie的有效期：默认情况下有效期是很短暂的，一旦用户关闭浏览器，cookie保存的数据就会
+                   丢失。如果想要延长cookie的有效期，可以通过设置HTTP头信息中的
+                  cache-control属性中的max-age值，或者修改HTTP头信息中的expires
+                  属性的值来延长有效期。
+    cookie的作用域：它是通过文档源和文档路径来确定的。该作用域通过cookie的path和domain
+                  属性也是可以设置的，默认情况下，cookie和创建它的web页面有关，并对该
+                  页面以及该页面同目录或者子目录的其他页面可见。
+    cookie的数目和大小的限制：每个web服务器（域名）保存的cookie数不能超过50个，每
+                  个cookie保存的数据不能超过4KB，如果超过了4KB,服务器会处理不了。
+    cookie的优点：能用于和服务端通信，当cookie快要过期时，可以重新设置而不是删除
+    cookie的缺点：它会随着http头信息一起发送，增加了网络流量；它只能储存少量的数据；
+                 它只能储存字符串；有潜在的安全问题。
+                 另外，自从有了Web Storage(Local and Session Storage)，cookie就不
+                 被推荐使用存储数据了。
+</pre>
+
+<pre>
+LocalStorage
+      在HTML5中，新加入了LocalStorage特性，这个特性主要用来做本地存储使用的，解决
+   了cookie存储空间不足的问题（cookie每条大小一般为4k），LocalStorage中支持的大小为
+   5M大小，这个在不同的浏览器中LocalStorage会有所不同。
+
+   LocalStorage的优点：
+       1）LocalStorage拓展了cookie的4K限制
+       2）LocalStorage会可以将第一次请求的数据直接存储在本地，这个相当于一个5M大小的针对
+          前端页面的数据库，相比于cookie可以节约带宽，但是这个却是只有在高版本的浏览器中才支持
+       3）LocalStorage方法存储的数据没有时间限制，
+   LocalStorage的缺点
+       1）浏览器的大小不统一，并且在IE8以上的IE版本中才支持LocalStorage这个属性
+       2）目前所有的浏览器都会把LocalStorage的值类型限定为String类型，这个在对我们日常
+          比较常见的JSON对象类型需要一些转换；
+       3）LocalStorage在浏览器的隐私模式下是不可读取的
+       5）LocalStorage本质上是对字符串的读取，如果存储内容多的话会消耗内存空间，会导致
+          页面变卡。
+</pre>
+
+<pre>
+Session Storage
+    sessionStorage与localStorage的唯一区别就是localStorage属于永久性存储，
+    而sessionStorage属于当前会话，会话一旦结束键值对就会被清空
+</pre>
+
+<pre>
+浏览器跨域访问
+</pre>

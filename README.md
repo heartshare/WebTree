@@ -359,3 +359,11 @@ Http的连接方式
           Connection：keep-alive
     当使用了长连接的时候，客户端一旦建立了连接，第二次建立连接的时候就直接使用已经建立的通道。但是keep-alive并不是永久的保持，可以在不同的服务器软件设置这个时间。
 </pre>
+
+<pre>
+Http2.0
+</pre>
+
+<pre>
+Https
+</pre>
